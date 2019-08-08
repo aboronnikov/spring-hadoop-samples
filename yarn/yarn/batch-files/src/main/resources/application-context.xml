@@ -18,8 +18,8 @@
 	</yarn:configuration>
 
 	<yarn:localresources>
-		<yarn:hdfs path="/app/batch-files/*.jar"/>
-		<yarn:hdfs path="/lib/*"/>
+		<yarn:hdfs path="/user/maria_dev/app/batch-files/*.jar"/>
+		<yarn:hdfs path="/user/maria_dev/lib/*"/>
 	</yarn:localresources>
 
 	<!--
