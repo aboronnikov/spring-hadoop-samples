@@ -105,7 +105,7 @@ public class BatchFilesTests extends AbstractYarnClusterTests {
 
 	private void createTestData() throws IOException {
 		FileSystem fs = FileSystem.get(getYarnCluster().getConfiguration());
-		Path path = new Path("/syarn-tmp/batch-files/set1/data.txt");
+		Path path = new Path("/home/maria_dev/homework/test-data/data.txt");
 		FSDataOutputStream out = fs.create(path);
 		for (int i = 0; i<300; i++) {
 			out.writeBytes("line" + i + "\n");
