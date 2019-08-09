@@ -98,7 +98,7 @@ configure(yarnExampleProjectsWithCommon()) {
 	configurations {
 		hadoopruntime.exclude group: 'log4j'
 		hadoopruntime.exclude group: 'org.slf4j'
-		hadoopruntime.exclude group: 'org.apache.hadoop'
+//		hadoopruntime.exclude group: 'org.apache.hadoop'
 		hadoopruntime.exclude group: 'org.apache.hive'
 //		hadoopruntime.exclude group: 'commons-logging'
 		hadoopruntime.exclude group: 'org.codehaus.jettison'
