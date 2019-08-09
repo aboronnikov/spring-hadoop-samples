@@ -25,6 +25,11 @@
 		fs.defaultFS=${SHDP_HD_FS}
 	</yarn:configuration>
 
+	<yarn:localresources>
+		<yarn:hdfs path="/user/maria_dev/app/batch-files/*.jar"/>
+		<yarn:hdfs path="/user/maria_dev/lib/*"/>
+	</yarn:localresources>
+
 	<hdp:resource-loader id="hadoopResourceLoader" configuration-ref="yarnConfiguration"/>
 
 	<bean id="defaultResourceLoaders" class="org.springframework.data.hadoop.fs.CustomResourceLoaderRegistrar" p:loader-ref="hadoopResourceLoader" />
